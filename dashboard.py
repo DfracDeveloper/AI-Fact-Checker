@@ -34,7 +34,7 @@ st.write("*Number of potential fake news in the Database: " + str(document_count
 
 
 # Query to get the last 50 documents
-last_50_documents = collection.find().sort("_id", -1).limit(50)
+last_50_documents = collection.find().sort('datetime', -1).limit(50)
 
 st.header("Top recent 50 Fake News :point_down:")
 # Convert the query result to a list of dictionaries
